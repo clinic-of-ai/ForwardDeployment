@@ -160,7 +160,11 @@
     height: var(--baseline-box-4x);
     object-fit: contain;
     width: 100%;
-    background-color: var(--background-color);
+    background-color: var(--purple-light);
+    background-image: linear-gradient(45deg, var(--purple-light) 25%, transparent 25%, transparent 75%, var(--purple-light) 75%, var(--purple-light)),
+                      linear-gradient(45deg, var(--purple-light) 25%, transparent 25%, transparent 75%, var(--purple-light) 75%, var(--purple-light));
+    background-size: 20px 20px;
+    background-position: 0 0, 10px 10px;
 }
 
 .play-icon {
@@ -286,7 +290,11 @@
     height: 100%;
     object-fit: contain;
     width: 100%;
-    background-color: var(--gray-light);
+    background-color: var(--cyan-light);
+    background-image: linear-gradient(45deg, var(--cyan-light) 25%, transparent 25%, transparent 75%, var(--cyan-light) 75%, var(--cyan-light)),
+                      linear-gradient(45deg, var(--cyan-light) 25%, transparent 25%, transparent 75%, var(--cyan-light) 75%, var(--cyan-light));
+    background-size: 20px 20px;
+    background-position: 0 0, 10px 10px;
 }
 
 /* ===== SHOWCASE ===== */
@@ -315,7 +323,11 @@
     height: 250px;
     object-fit: contain;
     display: block;
-    background-color: var(--background-color);
+    background-color: var(--pink-light);
+    background-image: linear-gradient(45deg, var(--pink-light) 25%, transparent 25%, transparent 75%, var(--pink-light) 75%, var(--pink-light)),
+                      linear-gradient(45deg, var(--pink-light) 25%, transparent 25%, transparent 75%, var(--pink-light) 75%, var(--pink-light));
+    background-size: 20px 20px;
+    background-position: 0 0, 10px 10px;
 }
 
 .showcase-info {
