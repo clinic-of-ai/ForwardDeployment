@@ -1,0 +1,6 @@
+[submodule "open-lovable"]
+	path = open-lovable
+	url = https://github.com/firecrawl/open-lovable.git
+[submodule "spec-kit"]
+	path = spec-kit
+	url = https://github.com/github/spec-kit.git
