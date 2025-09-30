@@ -1,0 +1,124 @@
+/* =========================================
+   CUSTOM FONTS
+   GT Maru Font Family
+   ========================================= */
+
+/* GT Maru Regular */
+@font-face {
+    font-display: swap;
+    font-family: 'GT Maru';
+    font-weight: 400;
+    font-style: normal;
+    src: local('GT Maru Regular'),
+         url('https://fonts.gstatic.com/s/inter/v12/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuLyfAZ9hjp-Ek-_EeA.woff2') format('woff2');
+}
+
+/* GT Maru Regular Italic */
+@font-face {
+    font-display: swap;
+    font-family: 'GT Maru';
+    font-weight: 400;
+    font-style: italic;
+    src: local('GT Maru Regular Italic');
+}
+
+/* GT Maru Bold */
+@font-face {
+    font-display: swap;
+    font-family: 'GT Maru';
+    font-weight: 700;
+    font-style: normal;
+    src: local('GT Maru Bold');
+}
+
+/* GT Maru Bold Italic */
+@font-face {
+    font-display: swap;
+    font-family: 'GT Maru';
+    font-weight: 700;
+    font-style: italic;
+    src: local('GT Maru Bold Italic');
+}
+
+/* GT Maru Black */
+@font-face {
+    font-display: swap;
+    font-family: 'GT Maru';
+    font-weight: 900;
+    font-style: normal;
+    src: local('GT Maru Black');
+}
+
+/* GT Maru Black Italic */
+@font-face {
+    font-display: swap;
+    font-family: 'GT Maru';
+    font-weight: 900;
+    font-style: italic;
+    src: local('GT Maru Black Italic');
+}
+
+/* GT Maru Mega (Variable Font) */
+@font-face {
+    font-display: swap;
+    font-family: 'GT Maru Mega';
+    font-weight: 100 900;
+    src: local('GT Maru Mega');
+}
+
+/* GT Maru Mono Regular */
+@font-face {
+    font-display: swap;
+    font-family: 'GT Maru Mono';
+    font-weight: 400;
+    font-style: normal;
+    src: local('GT Maru Mono Regular'),
+         local('Courier New');
+}
+
+/* GT Maru Mono Regular Italic */
+@font-face {
+    font-display: swap;
+    font-family: 'GT Maru Mono';
+    font-weight: 400;
+    font-style: italic;
+    src: local('GT Maru Mono Regular Italic'),
+         local('Courier New');
+}
+
+/* GT Maru Mono Bold */
+@font-face {
+    font-display: swap;
+    font-family: 'GT Maru Mono';
+    font-weight: 700;
+    font-style: normal;
+    src: local('GT Maru Mono Bold'),
+         local('Courier New');
+}
+
+/* GT Maru Mono Bold Italic */
+@font-face {
+    font-display: swap;
+    font-family: 'GT Maru Mono';
+    font-weight: 700;
+    font-style: italic;
+    src: local('GT Maru Mono Bold Italic'),
+         local('Courier New');
+}
+
+/* GT Maru Emoji */
+@font-face {
+    font-display: swap;
+    font-family: 'GT Maru Emoji';
+    src: local('Apple Color Emoji'),
+         local('Segoe UI Emoji'),
+         local('Noto Color Emoji');
+}
+
+/* Fallback to Google Fonts Inter as GT Maru substitute */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
+
+/* System font fallbacks */
+body {
+    font-family: var(--maru);
+}

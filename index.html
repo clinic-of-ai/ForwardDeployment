@@ -1,262 +1,372 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Coding Train - Clone</title>
+    <meta name="description" content="All aboard the Coding Train with Daniel Shiffman, a YouTube channel dedicated to beginner-friendly creative coding tutorials and challenges.">
+    <meta name="theme-color" content="#ffffff">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="The Coding Train">
+    <meta property="og:description" content="All aboard the Coding Train with Daniel Shiffman, a YouTube channel dedicated to beginner-friendly creative coding tutorials and challenges.">
+    <title>The Coding Train</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/components.css">
     <link rel="stylesheet" href="css/responsive.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="main-nav">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <span class="clock-emoji">🕛</span>
-                <span class="nav-title">The Coding Train</span>
-            </div>
-            <ul class="nav-menu">
-                <li><a href="#get-started">Get Started</a></li>
-                <li class="dropdown">
-                    <a href="#videos">Videos</a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#tracks">Tracks</a></li>
-                        <li><a href="#challenges">Challenges</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown">
-                    <a href="#community">Community</a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#guides">Guides</a></li>
-                        <li><a href="#showcase">Showcase</a></li>
-                        <li><a href="#discord">Discord</a></li>
-                        <li><a href="#github">GitHub</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown">
-                    <a href="#about">About</a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#faq">FAQ</a></li>
-                    </ul>
-                </li>
-            </ul>
-            <div class="nav-toggle">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-container">
-            <h1 class="hero-title">All aboard!</h1>
-            <div class="hero-subtitle">54931</div>
-            <p class="hero-description">
-                Welcome to the Coding Train with Daniel Shiffman! A community dedicated to learning creative coding with beginner-friendly tutorials and projects on YouTube and more.
-            </p>
-            <p class="hero-description-secondary">
-                Welcome to the Coding Train with Daniel Shiffman! A community dedicated to learning creative coding with beginner-friendly tutorials and projects on YouTube and more.
-            </p>
-        </div>
-    </section>
-
-    <!-- New to Coding Section -->
-    <section class="new-to-coding">
-        <div class="container">
-            <h2>New to coding?</h2>
-            <p>All aboard! Welcome to all beginners and code-curious individuals ready for a journey of self-expression and playful coding.</p>
-            <div class="cta-buttons">
-                <a href="#getting-started" class="btn btn-primary">getting started guide</a>
-                <a href="#faq" class="btn btn-secondary">have questions?</a>
-            </div>
-            <p class="cta-text">here's the FAQ</p>
-        </div>
-    </section>
-
-    <!-- Tracks Section -->
-    <section class="tracks">
-        <div class="container">
-            <h2>Tracks</h2>
-            <p>Streamline your learning experience and take a ride along a Track on The Coding Train. Tracks are collections of video tutorials that follow a sequenced curriculum.</p>
-            <p>Ready to learn? Hop on a track for beginners and more!</p>
-            <a href="#tracks" class="btn btn-outline">browse tracks</a>
-            
-            <div class="tracks-grid">
-                <div class="track-card">
-                    <div class="track-icon">👁</div>
-                    <h3>A Beginner's Guide to Machine Learning in JavaScript with ml5.js</h3>
-                    <div class="track-meta">
-                        <span class="video-count">29 videos</span>
-                        <span class="track-date">jul 31, 2018</span>
-                    </div>
-                    <p class="track-description">"A Beginner's Guide to Machine Learning in JavaScript with ml5.js" track</p>
-                </div>
+    <div id="app">
+        <div class="layout-container">
+            <div class="layout-content">
                 
-                <div class="track-card">
-                    <div class="track-icon">👁</div>
-                    <h3>Code! Programming with p5.js</h3>
-                    <div class="track-meta">
-                        <span class="video-count">35 videos</span>
-                        <span class="track-date">apr 12, 2019</span>
+                <!-- Top Bar -->
+                <div class="topbar-outer">
+                    <header class="topbar-root">
+                        <div class="topbar-logo">
+                            <a href="/" aria-label="Go to homepage">
+                                <svg class="logo-svg" viewBox="0 0 488.95 400">
+                                    <path fill="#9254A2" d="M48.74 171.22c-6.47 0-11.71-5.25-11.71-11.71V88.04H24.25c-6.47 0-11.71-5.25-11.71-11.71V25.55c0-6.47 5.24-11.71 11.71-11.71h216.99c6.47 0 11.71 5.25 11.71 11.71v92.19c0 6.47-5.24 11.71-11.71 11.71s-11.71-5.25-11.71-11.71V37.26H35.96v27.35h12.78c6.47 0 11.71 5.25 11.71 11.71v83.19c0 6.47-5.24 11.71-11.71 11.71"></path>
+                                    <path fill="#33C5F2" d="M375.22 129.45c-.6 0-1.22-.05-1.84-.15-6.39-1.01-10.74-7.01-9.73-13.4l12.44-78.64h-76.28l12.44 78.64c1.01 6.39-3.35 12.39-9.73 13.4-6.43 1.08-12.38-3.35-13.39-9.73l-14.59-92.19c-.54-3.39.44-6.83 2.66-9.43 2.23-2.61 5.48-4.11 8.9-4.11h103.69c3.42 0 6.67 1.5 8.9 4.11 2.22 2.6 3.2 6.05 2.66 9.43l-14.59 92.19c-.9 5.77-5.88 9.88-11.54 9.88"></path>
+                                    <path fill="#ED64A3" d="M470.17 346.93c-3.47 0-6.91-1.55-9.22-4.49l-46.2-59.04c-2.5-3.19-3.17-7.45-1.77-11.26l29.37-79.9-29.86-69.91c-2.54-5.94.22-12.82 6.16-15.36 5.95-2.52 12.83.22 15.36 6.17l31.69 74.18c1.18 2.73 1.26 5.82.23 8.63L437.2 274.1l42.18 53.9c3.98 5.10 3.09 12.45-2 16.44a11.65 11.65 0 01-7.21 2.49"></path>
+                                    <path fill="#9254A2" d="M124.78 390.89c-65.02 0-117.91-52.9-117.91-117.93 0-65.01 52.89-117.91 117.91-117.91s117.91 52.9 117.91 117.91c.01 65.03-52.88 117.93-117.91 117.93m0-212.41c-52.11 0-94.5 42.39-94.5 94.49 0 52.12 42.39 94.5 94.5 94.5s94.5-42.39 94.5-94.5c.01-52.11-42.39-94.49-94.5-94.49"></path>
+                                    <path fill="#33C5F2" d="M286.9 391.2c-26.18 0-47.49-21.3-47.49-47.49s21.3-47.49 47.49-47.49 47.49 21.3 47.49 47.49-21.31 47.49-47.49 47.49m0-72.51c-13.8 0-25.02 11.23-25.02 25.02s11.22 25.02 25.02 25.02 25.02-11.23 25.02-25.02-11.22-25.02-25.02-25.02m102.4 72.41c-25.95 0-47.07-21.12-47.07-47.07 0-25.96 21.12-47.08 47.07-47.08s47.07 21.12 47.07 47.08c0 25.95-21.12 47.07-47.07 47.07m0-71.88c-13.68 0-24.81 11.13-24.81 24.81s11.13 24.8 24.81 24.8 24.81-11.12 24.81-24.8-11.13-24.81-24.81-24.81"></path>
+                                    <path fill="#F89E53" d="M378.28 239.64c-6.47 0-11.71-5.25-11.71-11.71v-68.42c0-6.47 5.24-11.71 11.71-11.71s11.71 5.25 11.71 11.71v68.42c-.01 6.47-5.25 11.71-11.71 11.71m-40.33 0c-6.47 0-11.71-5.25-11.71-11.71v-68.42c0-6.47 5.24-11.71 11.71-11.71s11.71 5.25 11.71 11.71v68.42c-.01 6.47-5.25 11.71-11.71 11.71m-40.33 0c-6.47 0-11.71-5.25-11.71-11.71v-68.42c0-6.47 5.24-11.71 11.71-11.71s11.71 5.25 11.71 11.71v68.42c-.01 6.47-5.25 11.71-11.71 11.71m91.29 47.69H286.98c-6.47 0-11.71-5.25-11.71-11.71s5.24-11.71 11.71-11.71H388.9c6.47 0 11.71 5.25 11.71 11.71s-5.24 11.71-11.7 11.71"></path>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="topbar-clock">🕛</div>
+                        <div class="topbar-date">
+                            <span class="date-long">Tuesday / Sep 30th, 2025</span>
+                            <span class="date-short">9/30/2025</span>
+                        </div>
+                        <nav class="menu-root">
+                            <button class="menu-toggle" aria-label="Menu toggle">
+                                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="24" width="24">
+                                    <path d="M904 160H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zm0 624H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zm0-312H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8z"></path>
+                                </svg>
+                            </button>
+                            <ul class="menu-list">
+                                <li class="menu-item">
+                                    <button class="theme-toggle light-theme-btn" title="Switch to dark mode">
+                                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="24" width="24">
+                                            <path fill="none" d="M0 0h24v24H0z"></path>
+                                            <path d="M12 9c1.65 0 3 1.35 3 3s-1.35 3-3 3-3-1.35-3-3 1.35-3 3-3m0-2c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5zM2 13h2c.55 0 1-.45 1-1s-.45-1-1-1H2c-.55 0-1 .45-1 1s.45 1 1 1zm18 0h2c.55 0 1-.45 1-1s-.45-1-1-1h-2c-.55 0-1 .45-1 1s.45 1 1 1zM11 2v2c0 .55.45 1 1 1s1-.45 1-1V2c0-.55-.45-1-1-1s-1 .45-1 1zm0 18v2c0 .55.45 1 1 1s1-.45 1-1v-2c0-.55-.45-1-1-1s-1 .45-1 1zM5.99 4.58a.996.996 0 00-1.41 0 .996.996 0 000 1.41l1.06 1.06c.39.39 1.03.39 1.41 0s.39-1.03 0-1.41L5.99 4.58zm12.37 12.37a.996.996 0 00-1.41 0 .996.996 0 000 1.41l1.06 1.06c.39.39 1.03.39 1.41 0a.996.996 0 000-1.41l-1.06-1.06zm1.06-10.96a.996.996 0 000-1.41.996.996 0 00-1.41 0l-1.06 1.06c-.39.39-.39 1.03 0 1.41s1.03.39 1.41 0l1.06-1.06zM7.05 18.36a.996.996 0 000-1.41.996.996 0 00-1.41 0l-1.06 1.06c-.39.39-.39 1.03 0 1.41s1.03.39 1.41 0l1.06-1.06z"></path>
+                                        </svg>
+                                    </button>
+                                    <button class="theme-toggle dark-theme-btn active" title="Switch to light mode">
+                                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="24" width="24">
+                                            <path fill="none" d="M0 0h24v24H0z"></path>
+                                            <path d="M9.37 5.51A7.35 7.35 0 009.1 7.5c0 4.08 3.32 7.4 7.4 7.4.68 0 1.35-.09 1.99-.27A7.014 7.014 0 0112 19c-3.86 0-7-3.14-7-7 0-2.93 1.81-5.45 4.37-6.49zM12 3a9 9 0 109 9c0-.46-.04-.92-.1-1.36a5.389 5.389 0 01-4.4 2.26 5.403 5.403 0 01-3.14-9.8c-.44-.06-.9-.1-1.36-.1z"></path>
+                                        </svg>
+                                    </button>
+                                </li>
+                                <li class="menu-item"><a href="/guides/getting-started">Get Started</a></li>
+                                <li class="menu-item has-submenu">
+                                    <span>Videos</span>
+                                    <ul class="submenu">
+                                        <li class="submenu-item"><a href="/tracks">Tracks</a></li>
+                                        <li class="submenu-item"><a href="/challenges">Challenges</a></li>
+                                    </ul>
+                                </li>
+                                <li class="menu-item has-submenu">
+                                    <span>Community</span>
+                                    <ul class="submenu">
+                                        <li class="submenu-item"><a href="/guides">Guides</a></li>
+                                        <li class="submenu-item"><a href="/showcase">Showcase</a></li>
+                                        <li class="submenu-item"><a href="/discord">Discord</a></li>
+                                        <li class="submenu-item"><a href="https://github.com/CodingTrain">GitHub</a></li>
+                                    </ul>
+                                </li>
+                                <li class="menu-item has-submenu">
+                                    <a href="/about">About</a>
+                                    <ul class="submenu">
+                                        <li class="submenu-item"><a href="/faq">FAQ</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </nav>
+                    </header>
+                </div>
+
+                <!-- Hero Section -->
+                <div class="spacer" style="background:var(--background-color)"></div>
+                <header class="homepage-header">
+                    <svg class="cloud cloud1" xml:space="preserve" viewBox="0 0 85.9 36.7">
+                        <path fill="#FFF" stroke="#949393" d="M84.6 34.9c-.5-10.6-6.5-18.9-14-18.9-2.3 0-4.6.8-6.5 2.3-2.8-10-9.5-17.1-17.4-17.1-9.5 0-17.4 10.3-18.6 23.7-2.3-6.7-7-11.4-12.6-11.4-7.7 0-14 9.1-14 20.3v1.1z"></path>
+                    </svg>
+                    <svg class="cloud cloud2" xml:space="preserve" viewBox="0 0 85.9 36.7">
+                        <path fill="#FFF" stroke="#949393" d="M84.6 34.9c-.5-10.6-6.5-18.9-14-18.9-2.3 0-4.6.8-6.5 2.3-2.8-10-9.5-17.1-17.4-17.1-9.5 0-17.4 10.3-18.6 23.7-2.3-6.7-7-11.4-12.6-11.4-7.7 0-14 9.1-14 20.3v1.1z"></path>
+                    </svg>
+                    <svg class="cloud cloud3" xml:space="preserve" viewBox="0 0 85.9 36.7">
+                        <path fill="#FFF" stroke="#949393" d="M84.6 34.9c-.5-10.6-6.5-18.9-14-18.9-2.3 0-4.6.8-6.5 2.3-2.8-10-9.5-17.1-17.4-17.1-9.5 0-17.4 10.3-18.6 23.7-2.3-6.7-7-11.4-12.6-11.4-7.7 0-14 9.1-14 20.3v1.1z"></path>
+                    </svg>
+                    <svg class="sun" viewBox="0 0 150 150">
+                        <circle cx="75.2" cy="75.4" r="30.6" fill="#FFF200" stroke="#FF9F4C" stroke-miterlimit="10"></circle>
+                    </svg>
+                    <div class="heading heading-h1 heading-pink heading-border-bottom">
+                        <h1>All aboard!</h1>
                     </div>
-                    <p class="track-description">"Code! Programming with p5.js" track</p>
-                </div>
-            </div>
-        </div>
-    </section>
+                    <img src="images/train.svg" alt="The Coding Train" class="train-image">
+                </header>
 
-    <!-- Challenges Section -->
-    <section class="challenges">
-        <div class="container">
-            <h2>Challenges</h2>
-            <p>Watch Dan take on Coding Challenges in p5.js and Processing. The challenge topics include algorithmic art, machine learning, simulation, generative poetry, and more.</p>
-            <p>ready to explore? try a challenge!</p>
-            <a href="#challenges" class="btn btn-outline">browse challenges</a>
-            
-            <div class="challenges-grid">
-                <div class="challenge-card">
-                    <div class="challenge-icon">👁</div>
-                    <div class="challenge-content">
-                        <!-- Challenge content will be populated -->
+                <!-- Main Content -->
+                <main class="main-content">
+                    
+                    <!-- Welcome Section -->
+                    <section class="welcome-section">
+                        <div class="heading heading-h3 heading-pink heading-border-bottom">
+                            <h2>Welcome to the Coding Train!</h2>
+                        </div>
+                        <div class="content-block">
+                            <p>All aboard! The Coding Train is on its way with creative coding video tutorials on subjects ranging from the basics of programming languages like JavaScript to algorithmic art, machine learning, simulation, generative poetry, and more. Choo choo!</p>
+                        </div>
+                    </section>
+
+                    <!-- Tracks Section -->
+                    <section class="tracks-section">
+                        <div class="heading heading-h3 heading-purple heading-fill heading-border-bottom">
+                            <h2>🚂 Tracks</h2>
+                        </div>
+                        <div class="video-card-list">
+                            <!-- ML5.js Track -->
+                            <div class="video-card purple">
+                                <div class="video-card-block">
+                                    <div class="video-card-top">
+                                        <div class="video-card-icon">🤖</div>
+                                        <h3>A Beginner's Guide to Machine Learning with ml5.js</h3>
+                                    </div>
+                                    <div class="video-card-bottom">
+                                        <div class="video-card-left">
+                                            <p class="video-card-description">
+                                                An introduction to developing creative coding projects with machine learning. The theory and application of machine learning algorithms is demonstrated with JavaScript using the ml5.js library.
+                                            </p>
+                                            <div class="video-card-meta">
+                                                <span>22 videos</span>
+                                                <svg class="play-icon" viewBox="0 0 24 24" width="28" height="28">
+                                                    <path fill="currentColor" d="M8 5v14l11-7z"/>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="video-card-right">
+                                            <img src="https://thecodingtrain.com/static/73699ae…/ecd7d/index.jpg" alt="ML5.js track" class="video-card-img">
+                                            <div class="video-card-meta">
+                                                <span>22 videos</span>
+                                                <svg class="play-icon" viewBox="0 0 24 24" width="28" height="28">
+                                                    <path fill="currentColor" d="M8 5v14l11-7z"/>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="video-card-gap"></div>
+                            </div>
+
+                            <!-- P5.js Track -->
+                            <div class="video-card purple">
+                                <div class="video-card-block">
+                                    <div class="video-card-top">
+                                        <div class="video-card-icon">🎨</div>
+                                        <h3>Code! Programming with p5.js</h3>
+                                    </div>
+                                    <div class="video-card-bottom">
+                                        <div class="video-card-left">
+                                            <p class="video-card-description">
+                                                This online course focuses on the fundamentals of computer programming (variables, conditionals, iteration, functions & objects) using JavaScript. Client-side web development is covered with HTML5 and p5.js.
+                                            </p>
+                                            <div class="video-card-meta">
+                                                <span>32 videos</span>
+                                                <svg class="play-icon" viewBox="0 0 24 24" width="28" height="28">
+                                                    <path fill="currentColor" d="M8 5v14l11-7z"/>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="video-card-right">
+                                            <img src="https://thecodingtrain.com/static/9c90884…/ecd7d/index.jpg" alt="p5.js track" class="video-card-img">
+                                            <div class="video-card-meta">
+                                                <span>32 videos</span>
+                                                <svg class="play-icon" viewBox="0 0 24 24" width="28" height="28">
+                                                    <path fill="currentColor" d="M8 5v14l11-7z"/>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="video-card-gap"></div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Challenges Section -->
+                    <section class="challenges-section">
+                        <div class="heading heading-h3 heading-cyan heading-fill heading-border-bottom">
+                            <h2>💪 Coding Challenges</h2>
+                        </div>
+                        <div class="challenges-grid">
+                            <div class="challenge-card">
+                                <div class="challenge-thumb">
+                                    <div class="challenge-left">
+                                        <div class="challenge-title-container">
+                                            <div class="challenge-icon">🔢</div>
+                                            <div class="challenge-title">Bit Shifting</div>
+                                        </div>
+                                        <div class="challenge-description">
+                                            <p>In this coding challenge, I explore bit shifting in JavaScript and create a sketch that visualizes how bit shifting works.</p>
+                                        </div>
+                                        <div class="challenge-date">
+                                            <span>Aug 2024</span>
+                                        </div>
+                                    </div>
+                                    <div class="challenge-right">
+                                        <img src="https://thecodingtrain.com/static/5f7002a…/4a49b/index.jpg" alt="Bit Shifting" class="challenge-image">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="challenge-card">
+                                <div class="challenge-thumb">
+                                    <div class="challenge-left">
+                                        <div class="challenge-title-container">
+                                            <div class="challenge-icon">❌</div>
+                                            <div class="challenge-title">Tic Tac Toe</div>
+                                        </div>
+                                        <div class="challenge-description">
+                                            <p>In this multi-part coding challenge, I create a Tic Tac Toe game with p5.js and explore the Minimax algorithm.</p>
+                                        </div>
+                                        <div class="challenge-date">
+                                            <span>Jul 2024</span>
+                                        </div>
+                                    </div>
+                                    <div class="challenge-right">
+                                        <img src="https://thecodingtrain.com/static/af5964f…/c3eb5/index.jpg" alt="Tic Tac Toe" class="challenge-image">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="challenge-card">
+                                <div class="challenge-thumb">
+                                    <div class="challenge-left">
+                                        <div class="challenge-title-container">
+                                            <div class="challenge-icon">⚙️</div>
+                                            <div class="challenge-title">Simple Pendulum Simulation</div>
+                                        </div>
+                                        <div class="challenge-description">
+                                            <p>In this coding challenge, I simulate a simple pendulum in JavaScript with p5.js.</p>
+                                        </div>
+                                        <div class="challenge-date">
+                                            <span>Jun 2024</span>
+                                        </div>
+                                    </div>
+                                    <div class="challenge-right">
+                                        <img src="https://thecodingtrain.com/static/4c43274…/4a49b/index.jpg" alt="Simple Pendulum" class="challenge-image">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Passenger Showcase Section -->
+                    <section class="showcase-section" id="passenger-showcase">
+                        <div class="heading heading-h3 heading-pink heading-fill heading-border-bottom">
+                            <h2>🎉 Passenger Showcase</h2>
+                        </div>
+                        <div class="showcase-grid">
+                            <div class="showcase-item">
+                                <img src="https://thecodingtrain.com/static/79b8b2c…/47126/contribution-1752683789.png" alt="Fractal Tree of Exploding Poems">
+                                <div class="showcase-info">
+                                    <h4>Fractal Tree of Exploding Poems</h4>
+                                    <p>by curiouser.kate</p>
+                                </div>
+                            </div>
+                            <div class="showcase-item">
+                                <img src="https://thecodingtrain.com/static/2b3bf7f…/501e6/contribution-1753738275.png" alt="Cat">
+                                <div class="showcase-info">
+                                    <h4>Cat</h4>
+                                    <p>by Tarek</p>
+                                </div>
+                            </div>
+                            <div class="showcase-item">
+                                <img src="https://thecodingtrain.com/static/e7d22ab…/d26f8/contribution-1754907099.png" alt="Shapeshifting House">
+                                <div class="showcase-info">
+                                    <h4>Shapeshifting House</h4>
+                                    <p>by Liam C</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                </main>
+
+                <!-- Footer -->
+                <footer class="footer-root cols">
+                    <div class="footer-box footer-train-box">
+                        <div class="footer-logo">
+                            <img src="images/train.mini.svg" alt="The Coding Train illustration">
+                        </div>
+                        <div class="footer-train">
+                            <img src="images/train.mini.svg" alt="Train">
+                        </div>
                     </div>
-                </div>
-                <div class="challenge-card">
-                    <div class="challenge-icon">👁</div>
-                    <div class="challenge-content">
-                        <!-- Challenge content will be populated -->
+
+                    <div class="footer-box">
+                        <h3><a href="/about">About</a></h3>
+                        <p>The Coding Train is a YouTube channel dedicated to beginner-friendly creative coding tutorials and challenges.</p>
                     </div>
-                </div>
-                <div class="challenge-card">
-                    <div class="challenge-icon">👁</div>
-                    <div class="challenge-content">
-                        <!-- Challenge content will be populated -->
+
+                    <div class="footer-box footer-bottom-box">
+                        <h3>Support</h3>
+                        <div class="footer-action">
+                            <p>Help support the channel and join the community!</p>
+                            <a href="https://www.patreon.com/codingtrain" class="footer-cta">Become a Member</a>
+                        </div>
                     </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Showcase Section -->
-    <section class="showcase">
-        <div class="container">
-            <h2>Passenger showcase highlights</h2>
-            <p>Want to see more?</p>
-            <a href="#showcase" class="btn btn-outline">Browse the full showcase</a>
-        </div>
-    </section>
-
-    <!-- Events Section -->
-    <section class="events">
-        <div class="container">
-            <h2>Events</h2>
-            <p>Keep your eye out for events in the future!</p>
-        </div>
-    </section>
-
-    <!-- Support Section -->
-    <section class="support">
-        <div class="container">
-            <h2>Support</h2>
-            <p>Support the Coding Train and enjoy some perks!</p>
-            
-            <div class="support-grid">
-                <div class="support-item">
-                    <h3>YouTube Membership</h3>
-                    <a href="#" class="btn btn-outline">Join on YouTube</a>
-                </div>
-                <div class="support-item">
-                    <h3>Patreon</h3>
-                    <a href="#" class="btn btn-outline">Join on Patreon</a>
-                </div>
-                <div class="support-item">
-                    <h3>GitHub Sponsorship</h3>
-                    <a href="#" class="btn btn-outline">Join on GitHub</a>
-                </div>
-                <div class="support-item">
-                    <h3>Twitch Subscription</h3>
-                    <a href="#" class="btn btn-outline">Subscribe on Twitch</a>
-                </div>
-                <div class="support-item">
-                    <h3>Nature of Code Book</h3>
-                    <a href="#" class="btn btn-outline">Buy the NOC book</a>
-                </div>
-                <div class="support-item">
-                    <h3>Nebula Subscription</h3>
-                    <a href="#" class="btn btn-outline">Subscribe to Nebula</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Community Section -->
-    <section class="community">
-        <div class="container">
-            <div class="community-grid">
-                <div class="community-item">
-                    <h3>The Cafe Car!</h3>
-                    <p>Join the Coding Train Discord to chat with the community and get help with your code from the Station Managers.</p>
-                    <a href="#" class="btn btn-primary">Join Discord now</a>
-                </div>
-                
-                <div class="community-item">
-                    <h3>Passenger Showcase!</h3>
-                    <p>What have you been inspired to make watching The Coding Train? Share your work and have it featured on this site!</p>
-                    <a href="#" class="btn btn-outline">Learn how to submit your work</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="main-footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h4>Follow us!</h4>
-                    <div class="social-links">
-                        <a href="#">Youtube</a>
-                        <a href="#">Twitch</a>
-                        <a href="#">Nebula</a>
-                        <a href="#">Twitter</a>
-                        <a href="#">Instagram</a>
-                        <a href="#">Discord</a>
-                        <a href="#">GitHub</a>
+                    <div class="footer-social-links">
+                        <h3 class="footer-title">Follow</h3>
+                        <ul>
+                            <li><a href="https://youtube.com/thecodingtrain">YouTube<span>📺</span></a></li>
+                            <li><a href="https://twitter.com/thecodingtrain">Twitter<span>🐦</span></a></li>
+                            <li><a href="https://instagram.com/the.coding.train">Instagram<span>📷</span></a></li>
+                            <li><a href="https://twitch.tv/codingtrainchoochoo">Twitch<span>🎮</span></a></li>
+                        </ul>
                     </div>
-                </div>
-                
-                <div class="footer-section">
-                    <h4>Quick Links</h4>
-                    <ul class="footer-links">
-                        <li><a href="#getting-started">Getting started</a></li>
-                        <li><a href="#guide">Guide</a></li>
-                        <li><a href="#faqs">FAQs</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#shop">Shop</a></li>
-                        <li><a href="#videos">Videos</a></li>
-                        <li><a href="#tracks">Tracks</a></li>
-                        <li><a href="#challenges">Challenges</a></li>
-                        <li><a href="#passengers">Passengers</a></li>
-                        <li><a href="#showcase">Showcase</a></li>
-                        <li><a href="#discord">Discord</a></li>
-                        <li><a href="#github">GitHub</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-section">
-                    <h4>Support the Coding Train!</h4>
-                    <p>You can support the Coding Train by becoming a YouTube Member, Patreon Supporter, or GitHub Sponsor! For questions about rewards and perks, write us an email.</p>
-                </div>
-            </div>
-            
-            <div class="footer-bottom">
-                <p>&copy; 2016- The Coding Train. All rights reserved. Built in collaboration with Design System International.</p>
+
+                    <div class="footer-nav-box">
+                        <ul>
+                            <li class="footer-title">Tracks</li>
+                            <li><a href="/tracks">All Tracks</a></li>
+                            <li><a href="/tracks/ml5">ML5.js</a></li>
+                            <li><a href="/tracks/p5">P5.js</a></li>
+                        </ul>
+                        <ul>
+                            <li class="footer-title">Challenges</li>
+                            <li><a href="/challenges">All Challenges</a></li>
+                            <li><a href="/challenges/coding">Coding</a></li>
+                            <li><a href="/challenges/algorithmic">Algorithmic</a></li>
+                        </ul>
+                        <ul>
+                            <li class="footer-title">Community</li>
+                            <li><a href="/guides">Guides</a></li>
+                            <li><a href="/showcase">Showcase</a></li>
+                            <li><a href="/discord">Discord</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-copyright">
+                        <p>&copy; 2025 The Coding Train. All rights reserved.</p>
+                    </div>
+                </footer>
+
             </div>
         </div>
-    </footer>
+    </div>
 
     <script src="js/main.js"></script>
 </body>
