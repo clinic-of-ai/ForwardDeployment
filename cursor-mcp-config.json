@@ -5,8 +5,7 @@
       "args": [
         "chrome-devtools-mcp@latest",
         "--isolated=true",
-        "--headless=false",
-        "--logFile=C:\\Users\\phili\\Documents\\Coding\\Replica\\baseline\\chrome-devtools.log"
+        "--headless=false"
       ]
     },
     "github": {
