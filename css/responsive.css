@@ -1,0 +1,44 @@
+/* Default (Desktop) Styles */
+.menu-list {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .menu-list {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #fff;
+        border: 1px solid #eee;
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .dark .menu-list {
+        background: #1a1a1a;
+        border-color: #333;
+    }
+
+    .menu-list.open {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+        background: none;
+        border: none;
+        cursor: pointer;
+        color: inherit;
+    }
+}
