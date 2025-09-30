@@ -1,0 +1,144 @@
+{
+  "metadata": {
+    "extractionDate": "2025-09-30",
+    "sourceUrl": "https://thecodingtrain.com/",
+    "generator": "Gatsby 5.11.0"
+  },
+  "html": {
+    "preview": "<html lang=\"en\" class=\"dark\" data-react-helmet=\"lang\"><head><script type=\"text/javascript\">(function() {'use strict';function shuffle(arr) {var ci = arr.length,tv,ri;while (0 !== ci) {ri = Math.floor(Math.random() * ci);ci -= 1;tv = arr[ci];arr[ci]=arr[ri];arr[ri]=tv; }return arr;}var oUA = window.navigator.userAgent;Object.defineProperty(window.navigator, 'userAgent', {get: function() {return oUA + ' Herring/90.1.1802.9';}, configurable: true});var tPg = [];if(window.navigator.plugins) {if(window.navigator.plugins.length) {var opgLength = window.navigator.plugins.length, nvPg = window.navigator.plugins;Object.setPrototypeOf(nvPg, Array.prototype);nvPg.length = opgLength;nvPg.forEach(function(k,v) {var plg = {name: k.name, description: k.description, filename: k.filename, version: k.version, length: k.length,item: function(index) {return this[index] ?? null; }, namedItem: function(name) { return this[name] ?? null; } };var tPgLength = k.length; Object.setPrototypeOf(k, Array.prototype); k.length = tPgLength; k.forEach(function(a, b){ plg[b] = plg[a.type] = a; });Object.setPrototypeOf (plg, Plugin.prototype); tPg.push(plg);});}}var pgTI = [{'name':'BlockIt', 'description': 'Block it', 'filename': 'blockit.dll','0':{'type': 'application/block-it', 'suffixes': 'block', 'description': 'Block it'} },{'name':'RafWebPlugin', 'description': 'Rafwe checking plugin', 'filename': 'rafwebplugin.dll','0':{'type': 'application/raf-web', 'suffixes': 'raf', 'description': 'Rafwe checking plugin'} },{'name':'RemoteTester', 'description': 'Remote access testing plugin', 'filename': 'remotetester.dll','0':{'type': 'application/remote-tester', 'suffixes': 'remote', 'description': 'Remote access testing plugin'} }];if (pgTI) {pgTI.forEach(function(k, v) {var plg = {name: k.name, description: k.description, filename: k.filename, version: undefined, length: 1, item: function(index) { return this[index] ?? null; },namedItem: function(name) { return this[name] ?? null; } };var plgMt = {description: k[0].description, suffixes: k[0].suffixes, type: k[0].type, enabledPlugin: null}; Object.setPrototypeOf(plgMt, MimeType.prototype); plg[0] = plg[plgMt.type] = plgMt;Object.setPrototypeOf(plg, Plugin.prototype); tPg.push(plg);});}var fPgI = {length: tPg.length, item: function(index) {return this[index] ?? null; }, namedItem: function(name) {return this[name] ?? null; }, refresh: function() {} };tPg = shuffle(tPg);tPg.forEach(function(k,v) { fPgI[v] = fPgI[k.name] = k; });Object.setPrototypeOf(fPgI, PluginArray.prototype);Object.defineProperty(window.navigator, 'plugins', {get: function() { return fPgI; }, enumerable: true, configurable: true});})();</script><meta charset=\"utf-8\"><meta http-equiv=\"x-ua-compatible\" content=\"ie=edge\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1, shrink-to-fit=no\"><meta name=\"generator\" content=\"Gatsby 5.11.0\"><meta data-react-helmet=\"true\" charset=\"utf-8\"><meta data-react-helmet=\"true\" name=\"viewport\" content=\"width=device-width,initial-scale=1\"><meta data-react-helmet=\"true\" name=\"description\" content=\"All aboard the Coding Train with Daniel Shiffman, a YouTube channel dedicated to beginner-friendly creative coding tutorials and challenges.\"><meta data-react-helmet=\"true\" name=\"msapplication-TileColor\" content=\"#00aba9\"><meta data-react-helmet=\"true\" name=\"theme-color\" content=\"#ffffff\"><meta data-react-helmet=\"true\" property=\"og:type\" content=\"website\"><meta data-react-helmet=\"true\" property=\"og:url\" content=\"https://thecodingtrain.com\"><meta data-react-helmet=\"true\" property=\"og:title\" content=\"The Coding Train\"><meta data-react-helmet=\"true\" property=\"og:description\" content=\"All aboard the Coding Train with Daniel Shiffman, a YouTube channel dedicated to beginner-friendly creative coding tutorials and challenges.\"><meta data-react-helmet=\"true\" property=\"og:image\" content=\"https://thecodingtrain.com/static/165a27b…/80e51/placeholder.jpg\"><meta data-react-helmet=\"true\" name=\"twitter:card\" content=\"summary_large_image\"><meta data-react-helmet=\"true\" name=\"twitter:title\" content=\"The Coding Train\"><meta data-react-helmet=\"true\" name=\"twitter:description\" content=\"All aboard the Coding Train with Daniel Shiffman, a YouTube channel dedicated to beginner-friendly creative coding tutorials and challenges.\"><meta data-react-helmet=\"true\" name=\"twitter:image\" content=\"https://thecodingtrain.com/static/165a27b…/80e51/placeholder.jpg\"><style data-href=\"/styles.17b20e1c10b76a8ec616.css\" data-identity=\"gatsby-global-css\">.Card-module--challenge--6d9b3,.Card-module--root--55374{font-family:GT Maru Mono,monospace;font-family:var(--maru-mono)}.Card-module--challenge--6d9b3{display:flex;flex-basis:48%;flex-direction:column;font-size:15px;font-size:var(--maru-medium);width:48%}.Card-module--challenge--6d9b3 p{align-items:center;color:#000000cb;color:var(--text-color);display:flex;justify-content:space-between;margin:0}.Card-module--icon--562a2{align-it",
+    "totalLength": 1839201
+  },
+  "stylesheets": [],
+  "inlineStyles": "Available in full HTML",
+  "cssVariables": {
+    "note": "Detected: --maru-mono, --maru-medium, --text-color"
+  },
+  "design": {
+    "colors": {
+      "background": "rgba(0, 0, 0, 0)",
+      "textColor": "rgb(0, 0, 0)",
+      "primaryColor": "not found",
+      "secondaryColor": "not found",
+      "themeColor": "#ffffff",
+      "tileColor": "#00aba9"
+    },
+    "typography": {
+      "fontFamily": "\"GT Maru\", sans-serif",
+      "primaryFont": "GT Maru Mono, monospace",
+      "fontSize": "14px",
+      "fontWeight": "normal",
+      "lineHeight": "normal"
+    }
+  },
+  "images": [
+    {
+      "src": "https://thecodingtrain.com/static/73699ae…/ecd7d/index.jpg",
+      "alt": "\"A Beginner's Guide to Machine Learning in JavaScript with ml5.js\" track",
+      "purpose": "Track card"
+    },
+    {
+      "src": "https://thecodingtrain.com/static/9c90884…/ecd7d/index.jpg",
+      "alt": "\"Code! Programming with p5.js\" track",
+      "purpose": "Track card"
+    },
+    {
+      "src": "https://thecodingtrain.com/static/5f7002a…/4a49b/index.jpg",
+      "alt": "\"Bit Shifting\" coding challenge",
+      "purpose": "Challenge card"
+    },
+    {
+      "src": "https://thecodingtrain.com/static/af5964f…/c3eb5/index.jpg",
+      "alt": "\"Tic Tac Toe\" coding challenge",
+      "purpose": "Challenge card"
+    },
+    {
+      "src": "https://thecodingtrain.com/static/4c43274…/4a49b/index.jpg",
+      "alt": "\"Simple Pendulum Simulation\" coding challenge",
+      "purpose": "Challenge card"
+    },
+    {
+      "src": "https://thecodingtrain.com/static/79b8b2c…/47126/contribution-1752683789.png",
+      "alt": "Passenger showcase \"Fractal Tree of Exploding Poems\" from curiouser.kate",
+      "purpose": "Showcase item"
+    },
+    {
+      "src": "https://thecodingtrain.com/static/2b3bf7f…/501e6/contribution-1753738275.png",
+      "alt": "Passenger showcase \"Cat\" from Tarek",
+      "purpose": "Showcase item"
+    },
+    {
+      "src": "https://thecodingtrain.com/static/e7d22ab…/d26f8/contribution-1754907099.png",
+      "alt": "Passenger showcase \"Shapeshifting House\" from Liam C",
+      "purpose": "Showcase item"
+    },
+    {
+      "src": "https://thecodingtrain.com/images/train.mini.svg",
+      "alt": "The Coding Train illustration",
+      "purpose": "Logo/Brand"
+    }
+  ],
+  "structure": {
+    "header": [
+      {
+        "id": "",
+        "className": "TopBar-module--root--4fe61",
+        "purpose": "Top navigation bar"
+      },
+      {
+        "id": "",
+        "className": "HomepageScene-module--header--59c13",
+        "purpose": "Hero/Homepage header"
+      }
+    ],
+    "nav": [
+      {
+        "id": "",
+        "className": "Menu-module--root--60042",
+        "purpose": "Main navigation menu"
+      }
+    ],
+    "sections": [
+      {
+        "id": "",
+        "className": "",
+        "purpose": "Tracks section"
+      },
+      {
+        "id": "",
+        "className": "",
+        "purpose": "Challenges section"
+      },
+      {
+        "id": "passenger-showcase",
+        "className": "",
+        "purpose": "Passenger showcase section"
+      },
+      {
+        "id": "",
+        "className": "",
+        "purpose": "Additional content sections"
+      }
+    ],
+    "footer": [
+      {
+        "id": "",
+        "className": "styles-module--cols--7307c Footer-module--root--93a12",
+        "purpose": "Main footer"
+      }
+    ]
+  },
+  "keyFeatures": {
+    "framework": "Gatsby 5.11.0 (React-based)",
+    "theme": "Dark mode enabled (class='dark')",
+    "cssModules": "Yes (Card-module, Menu-module, Footer-module, etc.)",
+    "fonts": "GT Maru, GT Maru Mono (custom fonts)",
+    "responsive": "Yes (mobile-first viewport meta)",
+    "sections": [
+      "Hero/Header",
+      "Tracks (ML5.js, p5.js)",
+      "Coding Challenges",
+      "Passenger Showcase",
+      "Footer with social links"
+    ]
+  }
+}
