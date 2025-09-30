@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 32" width="64" height="32" aria-label="Train mini">
+  <rect x="2" y="12" width="40" height="12" rx="2" fill="#9253a1"/>
+  <rect x="10" y="8" width="16" height="8" rx="1" fill="#33C5F2"/>
+  <circle cx="12" cy="26" r="3" fill="#222"/>
+  <circle cx="22" cy="26" r="3" fill="#222"/>
+  <circle cx="34" cy="26" r="3" fill="#222"/>
+  <path d="M44 20 h10 v4 h-10 z" fill="#F89E53"/>
+  <circle cx="52" cy="26" r="3" fill="#222"/>
+  <circle cx="58" cy="26" r="3" fill="#222"/>
+</svg>
+
