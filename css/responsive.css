@@ -5,10 +5,15 @@
 
 /* ===== TABLET & BELOW (1180px) ===== */
 @media (max-width: 1180px) {
-    /* Video Cards */
-    .video-card {
+    /* Content Cards */
+    .content-card {
         flex-basis: 100%;
         width: 100%;
+        margin-right: 0;
+    }
+
+    /* Video Cards */
+    .video-card {
         border-left: var(--border);
     }
     
@@ -56,12 +61,6 @@
     }
 
     /* Challenges */
-    .challenge-card {
-        flex-basis: 100%;
-        width: 100%;
-        margin-right: 0;
-    }
-    
     .challenge-left .challenge-date {
         display: flex;
     }
@@ -164,7 +163,52 @@
 @media (max-width: 900px) {
     /* Navigation */
     .menu-toggle {
-        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        z-index: 1001; /* Ensure it's above the menu */
+    }
+
+    .hamburger-icon {
+        position: relative;
+        width: 24px;
+        height: 18px;
+    }
+
+    .hamburger-icon .line {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background-color: var(--text-color);
+        transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+
+    .hamburger-icon .line:nth-child(1) {
+        top: 0;
+    }
+
+    .hamburger-icon .line:nth-child(2) {
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .hamburger-icon .line:nth-child(3) {
+        bottom: 0;
+    }
+
+    .menu-toggle.active .hamburger-icon .line:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .menu-toggle.active .hamburger-icon .line:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu-toggle.active .hamburger-icon .line:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
     }
     
     .menu-list {

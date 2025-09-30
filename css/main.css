@@ -135,7 +135,7 @@ body {
     z-index: 100;
 }
 
-.has-submenu:hover .submenu {
+.submenu.active {
     display: block;
 }
 
@@ -401,6 +401,23 @@ section {
     transition-property: background-color, border-color, color;
     transition-duration: 0.3s;
     transition-timing-function: ease;
+}
+
+/* Skip Link */
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: var(--cyan);
+    color: white;
+    padding: 8px;
+    text-decoration: none;
+    z-index: 100;
+    transition: top 0.3s;
+}
+
+.skip-link:focus {
+    top: 0;
 }
 
 button, a {

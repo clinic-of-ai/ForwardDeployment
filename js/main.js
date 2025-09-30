@@ -36,14 +36,17 @@
         const menuList = document.querySelector('.menu-list');
 
         if (menuToggle && menuList) {
-            menuToggle.addEventListener('click', () => {
+            menuToggle.addEventListener('click', (e) => {
+                e.stopPropagation();
                 menuList.classList.toggle('active');
+                menuToggle.classList.toggle('active');
             });
 
             // Close menu when clicking outside
             document.addEventListener('click', (e) => {
-                if (!menuToggle.contains(e.target) && !menuList.contains(e.target)) {
+                if (menuList.classList.contains('active') && !menuList.contains(e.target)) {
                     menuList.classList.remove('active');
+                    menuToggle.classList.remove('active');
                 }
             });
         }
@@ -121,20 +124,6 @@
         });
     }
 
-    // ===== CARD HOVER EFFECTS =====
-    function initCardHoverEffects() {
-        const showcaseItems = document.querySelectorAll('.showcase-item');
-        
-        showcaseItems.forEach(item => {
-            item.addEventListener('mouseenter', function() {
-                this.style.transform = 'translateY(-10px)';
-            });
-            
-            item.addEventListener('mouseleave', function() {
-                this.style.transform = 'translateY(0)';
-            });
-        });
-    }
 
     // ===== LAZY LOADING IMAGES =====
     function initLazyLoading() {
@@ -225,29 +214,6 @@
 
     // ===== ACCESSIBILITY ENHANCEMENTS =====
     function initAccessibility() {
-        // Add skip to main content link
-        const skipLink = document.createElement('a');
-        skipLink.href = '#main-content';
-        skipLink.className = 'skip-link';
-        skipLink.textContent = 'Skip to main content';
-        skipLink.style.cssText = `
-            position: absolute;
-            top: -40px;
-            left: 0;
-            background: var(--cyan);
-            color: white;
-            padding: 8px;
-            text-decoration: none;
-            z-index: 100;
-        `;
-        skipLink.addEventListener('focus', function() {
-            this.style.top = '0';
-        });
-        skipLink.addEventListener('blur', function() {
-            this.style.top = '-40px';
-        });
-        document.body.insertBefore(skipLink, document.body.firstChild);
-        
         // Add main content ID if not present
         const mainContent = document.querySelector('.main-content');
         if (mainContent && !mainContent.id) {
@@ -278,6 +244,72 @@
         
         initThemeToggle();
         initMobileMenu();
+        initClock();
+        initDate();
+        initSmoothScrolling();
+        initLazyLoading();
+        initScrollAnimations();
+        initCloudAnimations();
+        initResponsiveViewportHeight();
+        initKeyboardNavigation();
+        initAccessibility();
+        logPerformance();
+
+        console.log('✅ All aboard! The Coding Train is ready!');
+    }
+
+    // ===== SUBMENU TOGGLE (CLICK-TO-OPEN) =====
+    function initSubmenuToggle() {
+        const submenuItems = document.querySelectorAll('.has-submenu');
+
+        submenuItems.forEach(item => {
+            const trigger = item.querySelector(':scope > span, :scope > a');
+            const submenu = item.querySelector('.submenu');
+
+            if (trigger && submenu) {
+                trigger.setAttribute('aria-haspopup', 'true');
+                trigger.setAttribute('aria-expanded', 'false');
+
+                trigger.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    if (trigger.tagName === 'A' && (trigger.getAttribute('href') === '#' || !trigger.getAttribute('href'))) {
+                        e.preventDefault();
+                    }
+
+                    const isActive = submenu.classList.contains('active');
+
+                    // Close all other submenus
+                    document.querySelectorAll('.submenu.active').forEach(openSubmenu => {
+                        if (openSubmenu !== submenu) {
+                            openSubmenu.classList.remove('active');
+                            const otherTrigger = openSubmenu.parentElement.querySelector(':scope > span, :scope > a');
+                            if (otherTrigger) otherTrigger.setAttribute('aria-expanded', 'false');
+                        }
+                    });
+
+                    submenu.classList.toggle('active');
+                    trigger.setAttribute('aria-expanded', !isActive);
+                });
+            }
+        });
+
+        // Close submenus on outside click
+        document.addEventListener('click', () => {
+            document.querySelectorAll('.submenu.active').forEach(openSubmenu => {
+                openSubmenu.classList.remove('active');
+                const trigger = openSubmenu.parentElement.querySelector(':scope > span, :scope > a');
+                if (trigger) trigger.setAttribute('aria-expanded', 'false');
+            });
+        });
+    }
+
+    // ===== INITIALIZE ALL =====
+    function init() {
+        console.log('🚂 The Coding Train is departing...');
+
+        initThemeToggle();
+        initMobileMenu();
+        initSubmenuToggle();
         initClock();
         initDate();
         initSmoothScrolling();

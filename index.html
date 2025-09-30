@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
     <div id="app">
         <div class="layout-container">
             <div class="layout-content">
@@ -44,14 +45,16 @@
                         </div>
                         <div class="topbar-clock">🕛</div>
                         <div class="topbar-date">
-                            <span class="date-long">Tuesday / Sep 30th, 2025</span>
-                            <span class="date-short">9/30/2025</span>
+                            <span class="date-long"></span>
+                            <span class="date-short"></span>
                         </div>
                         <nav class="menu-root">
                             <button class="menu-toggle" aria-label="Menu toggle">
-                                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="24" width="24">
-                                    <path d="M904 160H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zm0 624H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zm0-312H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8z"></path>
-                                </svg>
+                                <span class="hamburger-icon">
+                                    <span class="line"></span>
+                                    <span class="line"></span>
+                                    <span class="line"></span>
+                                </span>
                             </button>
                             <ul class="menu-list">
                                 <li class="menu-item">
@@ -114,7 +117,7 @@
                     <div class="heading heading-h1 heading-pink heading-border-bottom">
                         <h1>All aboard!</h1>
                     </div>
-                    <img src="images/train.svg" alt="The Coding Train" class="train-image">
+                    <img src="images/train.svg" alt="Stylized illustration of a colorful train, the logo for The Coding Train." class="train-image">
                 </header>
 
                 <!-- Main Content -->
@@ -135,17 +138,17 @@
                         <div class="heading heading-h3 heading-purple heading-fill heading-border-bottom">
                             <h2>🚂 Tracks</h2>
                         </div>
-                        <div class="video-card-list">
+                        <div class="content-card-grid video-card-list">
                             <!-- ML5.js Track -->
-                            <div class="video-card purple">
+                            <div class="content-card video-card purple">
                                 <div class="video-card-block">
                                     <div class="video-card-top">
-                                        <div class="video-card-icon">🤖</div>
+                                        <div class="content-card-icon video-card-icon">🤖</div>
                                         <h3>A Beginner's Guide to Machine Learning with ml5.js</h3>
                                     </div>
-                                    <div class="video-card-bottom">
-                                        <div class="video-card-left">
-                                            <p class="video-card-description">
+                                    <div class="content-card-thumb video-card-bottom">
+                                        <div class="content-card-left video-card-left">
+                                            <p class="content-card-description video-card-description">
                                                 An introduction to developing creative coding projects with machine learning. The theory and application of machine learning algorithms is demonstrated with JavaScript using the ml5.js library.
                                             </p>
                                             <div class="video-card-meta">
@@ -155,8 +158,8 @@
                                                 </svg>
                                             </div>
                                         </div>
-                                        <div class="video-card-right">
-                                            <img src="https://thecodingtrain.com/static/73699ae…/ecd7d/index.jpg" alt="ML5.js track" class="video-card-img">
+                                        <div class="content-card-right video-card-right">
+                                            <img src="https://thecodingtrain.com/static/73699ae…/ecd7d/index.jpg" alt="Thumbnail for the ML5.js track, showing a robot icon and the title 'A Beginner's Guide to Machine Learning with ml5.js'" class="content-card-image video-card-img">
                                             <div class="video-card-meta">
                                                 <span>22 videos</span>
                                                 <svg class="play-icon" viewBox="0 0 24 24" width="28" height="28">
@@ -170,15 +173,15 @@
                             </div>
 
                             <!-- P5.js Track -->
-                            <div class="video-card purple">
+                            <div class="content-card video-card purple">
                                 <div class="video-card-block">
                                     <div class="video-card-top">
-                                        <div class="video-card-icon">🎨</div>
+                                        <div class="content-card-icon video-card-icon">🎨</div>
                                         <h3>Code! Programming with p5.js</h3>
                                     </div>
-                                    <div class="video-card-bottom">
-                                        <div class="video-card-left">
-                                            <p class="video-card-description">
+                                    <div class="content-card-thumb video-card-bottom">
+                                        <div class="content-card-left video-card-left">
+                                            <p class="content-card-description video-card-description">
                                                 This online course focuses on the fundamentals of computer programming (variables, conditionals, iteration, functions & objects) using JavaScript. Client-side web development is covered with HTML5 and p5.js.
                                             </p>
                                             <div class="video-card-meta">
@@ -188,8 +191,8 @@
                                                 </svg>
                                             </div>
                                         </div>
-                                        <div class="video-card-right">
-                                            <img src="https://thecodingtrain.com/static/9c90884…/ecd7d/index.jpg" alt="p5.js track" class="video-card-img">
+                                        <div class="content-card-right video-card-right">
+                                            <img src="https://thecodingtrain.com/static/9c90884…/ecd7d/index.jpg" alt="Thumbnail for the p5.js track, showing a paint palette icon and the title 'Code! Programming with p5.js'" class="content-card-image video-card-img">
                                             <div class="video-card-meta">
                                                 <span>32 videos</span>
                                                 <svg class="play-icon" viewBox="0 0 24 24" width="28" height="28">
@@ -209,12 +212,12 @@
                         <div class="heading heading-h3 heading-cyan heading-fill heading-border-bottom">
                             <h2>💪 Coding Challenges</h2>
                         </div>
-                        <div class="challenges-grid">
-                            <div class="challenge-card">
-                                <div class="challenge-thumb">
-                                    <div class="challenge-left">
+                        <div class="content-card-grid challenges-grid">
+                            <div class="content-card challenge-card">
+                                <div class="content-card-thumb challenge-thumb">
+                                    <div class="content-card-left challenge-left">
                                         <div class="challenge-title-container">
-                                            <div class="challenge-icon">🔢</div>
+                                            <div class="content-card-icon challenge-icon">🔢</div>
                                             <div class="challenge-title">Bit Shifting</div>
                                         </div>
                                         <div class="challenge-description">
@@ -224,17 +227,17 @@
                                             <span>Aug 2024</span>
                                         </div>
                                     </div>
-                                    <div class="challenge-right">
-                                        <img src="https://thecodingtrain.com/static/5f7002a…/4a49b/index.jpg" alt="Bit Shifting" class="challenge-image">
+                                    <div class="content-card-right challenge-right">
+                                        <img src="https://thecodingtrain.com/static/5f7002a…/4a49b/index.jpg" alt="Thumbnail for the 'Bit Shifting' coding challenge, showing a visualization of binary numbers." class="content-card-image challenge-image">
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="challenge-card">
-                                <div class="challenge-thumb">
-                                    <div class="challenge-left">
+                            <div class="content-card challenge-card">
+                                <div class="content-card-thumb challenge-thumb">
+                                    <div class="content-card-left challenge-left">
                                         <div class="challenge-title-container">
-                                            <div class="challenge-icon">❌</div>
+                                            <div class="content-card-icon challenge-icon">❌</div>
                                             <div class="challenge-title">Tic Tac Toe</div>
                                         </div>
                                         <div class="challenge-description">
@@ -244,17 +247,17 @@
                                             <span>Jul 2024</span>
                                         </div>
                                     </div>
-                                    <div class="challenge-right">
-                                        <img src="https://thecodingtrain.com/static/af5964f…/c3eb5/index.jpg" alt="Tic Tac Toe" class="challenge-image">
+                                    <div class="content-card-right challenge-right">
+                                        <img src="https://thecodingtrain.com/static/af5964f…/c3eb5/index.jpg" alt="Thumbnail for the 'Tic Tac Toe' coding challenge, showing a game of tic-tac-toe in progress." class="content-card-image challenge-image">
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="challenge-card">
-                                <div class="challenge-thumb">
-                                    <div class="challenge-left">
+                            <div class="content-card challenge-card">
+                                <div class="content-card-thumb challenge-thumb">
+                                    <div class="content-card-left challenge-left">
                                         <div class="challenge-title-container">
-                                            <div class="challenge-icon">⚙️</div>
+                                            <div class="content-card-icon challenge-icon">⚙️</div>
                                             <div class="challenge-title">Simple Pendulum Simulation</div>
                                         </div>
                                         <div class="challenge-description">
@@ -264,8 +267,8 @@
                                             <span>Jun 2024</span>
                                         </div>
                                     </div>
-                                    <div class="challenge-right">
-                                        <img src="https://thecodingtrain.com/static/4c43274…/4a49b/index.jpg" alt="Simple Pendulum" class="challenge-image">
+                                    <div class="content-card-right challenge-right">
+                                        <img src="https://thecodingtrain.com/static/4c43274…/4a49b/index.jpg" alt="Thumbnail for the 'Simple Pendulum Simulation' coding challenge, showing an animation of a pendulum swinging." class="content-card-image challenge-image">
                                     </div>
                                 </div>
                             </div>
@@ -279,21 +282,21 @@
                         </div>
                         <div class="showcase-grid">
                             <div class="showcase-item">
-                                <img src="https://thecodingtrain.com/static/79b8b2c…/47126/contribution-1752683789.png" alt="Fractal Tree of Exploding Poems">
+                                <img src="https://thecodingtrain.com/static/79b8b2c…/47126/contribution-1752683789.png" alt="Passenger showcase: 'Fractal Tree of Exploding Poems' by curiouser.kate. An image of a fractal tree with words branching out.">
                                 <div class="showcase-info">
                                     <h4>Fractal Tree of Exploding Poems</h4>
                                     <p>by curiouser.kate</p>
                                 </div>
                             </div>
                             <div class="showcase-item">
-                                <img src="https://thecodingtrain.com/static/2b3bf7f…/501e6/contribution-1753738275.png" alt="Cat">
+                                <img src="https://thecodingtrain.com/static/2b3bf7f…/501e6/contribution-1753738275.png" alt="Passenger showcase: 'Cat' by Tarek. A pixelated drawing of a cat's face.">
                                 <div class="showcase-info">
                                     <h4>Cat</h4>
                                     <p>by Tarek</p>
                                 </div>
                             </div>
                             <div class="showcase-item">
-                                <img src="https://thecodingtrain.com/static/e7d22ab…/d26f8/contribution-1754907099.png" alt="Shapeshifting House">
+                                <img src="https://thecodingtrain.com/static/e7d22ab…/d26f8/contribution-1754907099.png" alt="Passenger showcase: 'Shapeshifting House' by Liam C. An animation of a house that changes its shape.">
                                 <div class="showcase-info">
                                     <h4>Shapeshifting House</h4>
                                     <p>by Liam C</p>
@@ -308,10 +311,10 @@
                 <footer class="footer-root cols">
                     <div class="footer-box footer-train-box">
                         <div class="footer-logo">
-                            <img src="images/train.mini.svg" alt="The Coding Train illustration">
+                            <img src="images/train.mini.svg" alt="A small, simplified illustration of The Coding Train logo.">
                         </div>
                         <div class="footer-train">
-                            <img src="images/train.mini.svg" alt="Train">
+                            <img src="images/train.mini.svg" alt="A small illustration of a train.">
                         </div>
                     </div>
 

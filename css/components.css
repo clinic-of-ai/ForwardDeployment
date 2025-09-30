@@ -3,16 +3,63 @@
    Cards, Buttons, Footer, and UI Elements
    ========================================= */
 
-/* ===== VIDEO CARDS ===== */
-.video-card-list {
+/* ===== CONTENT CARDS ===== */
+.content-card {
+    display: flex;
+    margin-bottom: var(--baseline);
+    font-family: var(--maru-mono);
+}
+
+.content-card-grid {
     display: flex;
     flex-wrap: wrap;
+}
+
+.content-card-thumb {
+    display: flex;
+}
+
+.content-card-left {
+    flex: 2 2 50%;
+}
+
+.content-card-right {
+    flex: 1 1 50%;
+}
+
+.content-card-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--maru-emoji);
+    font-size: var(--maru-emoji-normal);
+    line-height: 1;
+}
+
+.content-card-description {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-size: var(--maru-small);
+    line-height: var(--baseline-2of5);
+    padding: var(--spacing-normal);
+    margin: 0;
+    flex-grow: 1;
+    overflow: hidden;
+}
+
+.content-card-image {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+
+/* ===== VIDEO CARDS ===== */
+.video-card-list {
     margin-right: calc(var(--baseline) * -1);
     margin-top: calc(var(--baseline-box) * -1);
 }
 
 .video-card {
-    display: flex;
     flex-basis: 50%;
     width: 50%;
 }
@@ -85,15 +132,9 @@
 }
 
 .video-card-icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     flex: 0 0 var(--baseline);
     height: var(--baseline);
     color: var(--icon-color);
-    font-family: var(--maru-emoji);
-    font-size: var(--maru-emoji-normal);
-    line-height: 1;
     border-right: var(--border);
 }
 
@@ -123,17 +164,8 @@
 }
 
 .video-card-description {
-    background-color: var(--background-color);
-    color: var(--text-color);
-    flex-grow: 1;
-    font-family: var(--maru-mono);
-    font-size: var(--maru-small);
-    line-height: var(--baseline-2of5);
-    margin: 0;
-    max-height: var(--baseline-box-5x);
-    overflow: hidden;
-    padding: var(--spacing-normal);
     text-overflow: ellipsis;
+    max-height: var(--baseline-box-5x);
 }
 
 .video-card-right {
@@ -158,8 +190,6 @@
 
 .video-card-img {
     height: var(--baseline-box-4x);
-    object-fit: cover;
-    width: 100%;
 }
 
 .play-icon {
@@ -170,35 +200,21 @@
 .challenges-grid {
     display: flex;
     flex-wrap: wrap;
-    gap: 0;
 }
 
 .challenge-card {
     flex-basis: 48%;
     width: 48%;
-    font-family: var(--maru-mono);
-    font-size: var(--maru-medium);
-    display: flex;
     flex-direction: column;
     margin-right: 2%;
-    margin-bottom: var(--baseline);
 }
 
 .challenge-card:nth-child(2n) {
     margin-right: 0;
 }
 
-.challenge-thumb {
-    display: flex;
-}
-
-.challenge-left {
-    flex: 2 2 50%;
-}
-
 .challenge-right {
     background-color: var(--gray-light);
-    flex: 1 1 50%;
     height: var(--baseline-4x);
 }
 
@@ -207,12 +223,7 @@
 }
 
 .challenge-icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     flex-basis: var(--baseline-box);
-    font-family: var(--maru-emoji);
-    font-size: var(--maru-emoji-normal);
     color: var(--cyan);
     border-bottom: var(--border-cyan);
     border-left: var(--border-cyan);
@@ -237,7 +248,6 @@
 }
 
 .challenge-description {
-    background-color: var(--background-color);
     border-bottom: var(--border-cyan);
     border-left: var(--border-cyan);
     height: var(--baseline-5x);
@@ -280,9 +290,6 @@
 .challenge-image {
     border-bottom: var(--border-cyan);
     border-left: var(--border-cyan);
-    height: 100%;
-    object-fit: cover;
-    width: 100%;
 }
 
 /* ===== SHOWCASE ===== */
@@ -303,7 +310,7 @@
 }
 
 .showcase-item:hover {
-    transform: translateY(-5px);
+    transform: translateY(-10px);
 }
 
 .showcase-item img {
