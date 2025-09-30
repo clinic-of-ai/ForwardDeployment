@@ -18,7 +18,13 @@ To stop the server: Press `Ctrl+C` in the terminal
 To restart:
 ```bash
 cd C:\Users\phili\Documents\Coding\Replica
-python -m http.server 8000
+npx serve . -p 8000
+```
+
+Or using npm (after installing serve globally):
+```bash
+npm install -g serve
+serve . -p 8000
 ```
 
 ### Option 2: Double-Click (Simple!)
