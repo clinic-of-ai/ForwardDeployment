@@ -158,8 +158,9 @@
 
 .video-card-img {
     height: var(--baseline-box-4x);
-    object-fit: cover;
+    object-fit: contain;
     width: 100%;
+    background-color: var(--background-color);
 }
 
 .play-icon {
@@ -312,8 +313,9 @@
 .showcase-item img {
     width: 100%;
     height: 250px;
-    object-fit: cover;
+    object-fit: contain;
     display: block;
+    background-color: var(--background-color);
 }
 
 .showcase-info {
