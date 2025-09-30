@@ -200,6 +200,8 @@
     background-color: var(--gray-light);
     flex: 1 1 50%;
     height: var(--baseline-4x);
+    display: flex;
+    flex-direction: column;
 }
 
 .challenge-title-container {
@@ -281,8 +283,9 @@
     border-bottom: var(--border-cyan);
     border-left: var(--border-cyan);
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
     width: 100%;
+    background-color: var(--gray-light);
 }
 
 /* ===== SHOWCASE ===== */
