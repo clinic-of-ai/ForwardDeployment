@@ -158,13 +158,9 @@
 
 .video-card-img {
     height: var(--baseline-box-4x);
-    object-fit: contain;
+    object-fit: cover;
     width: 100%;
     background-color: var(--purple-light);
-    background-image: linear-gradient(45deg, var(--purple-light) 25%, transparent 25%, transparent 75%, var(--purple-light) 75%, var(--purple-light)),
-                      linear-gradient(45deg, var(--purple-light) 25%, transparent 25%, transparent 75%, var(--purple-light) 75%, var(--purple-light));
-    background-size: 20px 20px;
-    background-position: 0 0, 10px 10px;
 }
 
 .play-icon {
@@ -204,7 +200,7 @@
 .challenge-right {
     background-color: var(--gray-light);
     flex: 1 1 50%;
-    height: var(--baseline-4x);
+    min-height: var(--baseline-4x);
     display: flex;
     flex-direction: column;
 }
@@ -288,13 +284,9 @@
     border-bottom: var(--border-cyan);
     border-left: var(--border-cyan);
     height: 100%;
-    object-fit: contain;
+    object-fit: cover;
     width: 100%;
     background-color: var(--cyan-light);
-    background-image: linear-gradient(45deg, var(--cyan-light) 25%, transparent 25%, transparent 75%, var(--cyan-light) 75%, var(--cyan-light)),
-                      linear-gradient(45deg, var(--cyan-light) 25%, transparent 25%, transparent 75%, var(--cyan-light) 75%, var(--cyan-light));
-    background-size: 20px 20px;
-    background-position: 0 0, 10px 10px;
 }
 
 /* ===== SHOWCASE ===== */
@@ -321,13 +313,9 @@
 .showcase-item img {
     width: 100%;
     height: 250px;
-    object-fit: contain;
+    object-fit: cover;
     display: block;
     background-color: var(--pink-light);
-    background-image: linear-gradient(45deg, var(--pink-light) 25%, transparent 25%, transparent 75%, var(--pink-light) 75%, var(--pink-light)),
-                      linear-gradient(45deg, var(--pink-light) 25%, transparent 25%, transparent 75%, var(--pink-light) 75%, var(--pink-light));
-    background-size: 20px 20px;
-    background-position: 0 0, 10px 10px;
 }
 
 .showcase-info {
