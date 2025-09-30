@@ -1,0 +1,32 @@
+{
+  "name": "coding-train-clone",
+  "version": "1.0.0",
+  "description": "A pixel-perfect replica of The Coding Train website",
+  "main": "index.html",
+  "scripts": {
+    "dev": "python -m http.server 8000",
+    "start": "npx serve .",
+    "build": "echo 'Build process would go here'",
+    "test": "echo 'Tests would go here'"
+  },
+  "keywords": [
+    "coding-train",
+    "daniel-shiffman",
+    "creative-coding",
+    "p5js",
+    "ml5js",
+    "website-clone",
+    "responsive-design"
+  ],
+  "author": "Claude Sonnet 4.5",
+  "license": "MIT",
+  "type": "commonjs",
+  "devDependencies": {
+    "serve": "^14.2.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/coding-train-clone.git"
+  },
+  "homepage": "https://yourusername.github.io/coding-train-clone"
+}
